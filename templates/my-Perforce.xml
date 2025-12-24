@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Perforce</Name>
+  <Repository>hardlinestudios/p4d:2025.2</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <ReadMe/>
+  <Overview>Simple Perforce docker for Unraid. Runs 25.2.</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/hardlinestudios/unraid-perforce/main/icons/perforce.png</Icon>
+  <ExtraParams/>
+  <PostArgs>p4d -r /p4 -p 1666</PostArgs>
+  <CPUset/>
+  <DateInstalled>1766555065</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="P4 Root" Target="/p4" Default="" Mode="rw" Description="Path to Perforce root" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="P4PORT" Target="P4PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1666</Config>
+  <Config Name="P4USER" Target="P4USER" Default="" Mode="" Description="Admin username" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="P4PASSWD" Target="P4PASSWD" Default="" Mode="" Description="Admin password" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="P4NAME" Target="P4NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Perforce (2025.2)</Config>
+  <Config Name="Port" Target="1666" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">1666</Config>
+  <TailscaleStateDir/>
+</Container>
